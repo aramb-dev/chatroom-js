@@ -8,7 +8,7 @@ function divSystemContentElement(message) {
 
 function processUserInput(chatApp, socket) {
   let message = $('#send-message').val()
-  let systemmessage
+  let systemMessage
   if (message.charAt(0) == '/') {
     systemMessage = chatApp.processCommand(message)
     if (systemMessage) {
@@ -54,7 +54,7 @@ socket.on('rooms', function (rooms)  {
       $('#room-list').append(divEscapedContentElement(room))
     }
   }
-  $('#room-list div').clcik(function () {
+  $('#room-list div').click(function () {
     chatApp.processCommand(`/join ${$(this).text()}`)
     $('#send-message').focus()
     
@@ -65,7 +65,7 @@ setInterval(function () {
   socket.emit('rooms')
 }, 1000)
 
-$('#send-message').foxus()
+$('#send-message').focus()
 
 $('#send-form').submit(function () {
   processUserInput(chatApp, socket)
