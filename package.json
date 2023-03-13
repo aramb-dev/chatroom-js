@@ -1,0 +1,9 @@
+{
+  "name": "chat-room by Abdur-Rahman",
+  "version": "1.0.0",
+  "description": "chat-room by Abdur-Rahman",
+  "dependencies": {
+    "socket.io": "4.6.1",
+    "mime": "3.0.0"
+  }
+}
