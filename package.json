@@ -1,9 +1,9 @@
 {
-  "name": "chat-room by Abdur-Rahman",
-  "version": "1.0.0",
-  "description": "chat-room by Abdur-Rahman",
+  "name": "chatrooms",
+  "version": "0.0.1",
+  "description": "Minimalist multiroom chat server",
   "dependencies": {
-    "socket.io": "4.6.1",
-    "mime": "3.0.0"
+    "socket.io": "~0.9.6",
+     "mime": "~1.2.7"
   }
 }
